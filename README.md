@@ -1,5 +1,5 @@
    - Indroduction 
-   - UI Screent Shots 
+   - UI Screentshots 
    - How the application Works
    
 
