@@ -21,6 +21,14 @@ const ProfileSchema = new mongoose.Schema({
       caption: {
         type: String,
         required: true
+      },
+      fav: {
+        type: Boolean,
+        required: true,
+      },
+      btnFill: {
+        type: String,
+        required: true,
       }
 
 

@@ -14,7 +14,7 @@ const handlefav = props.handlefav;
     return (
         posts.map((post) => (
 
-            <div class="container mx-auto px-4 overflow-hidden">
+            <div class="container mx-auto px-4 overflow-hidden" key={post.userId}>
 
 
             <div className="bg-white my-7 border rounded-sm">
@@ -37,7 +37,9 @@ const handlefav = props.handlefav;
                 {/* buttons */}
 
                 <div className="flex space-x-4 px-4 pt-4">
-                    <HeartIcon className="btn" onClick={() => props.handlefav(post)} />
+                    <HeartIcon className="btn" 
+                    fill={post.btnFill}
+                    onClick={() => props.handlefav(post)} />
                     <ChatIcon className="btn" />
                     <PaperAirplaneIcon className="btn" />
 

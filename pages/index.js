@@ -1,82 +1,58 @@
 import Head from 'next/head'
-import Header from "../components/Header";
-import Post from "../components/Post";
-import Footer from "../components/Footer";
-import mongoose from "mongoose";
-import Fetch from 'isomorphic-unfetch';
-import { connect } from 'mongoose';
-
-
-
+import Header from '../components/Header'
+import Post from '../components/Post'
+import Footer from '../components/Footer'
+import mongoose from 'mongoose'
+import Fetch from 'isomorphic-unfetch'
+import { connect } from 'mongoose'
+import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 const Home = () => {
-
-  const posts = [
-    {
-      userId: "111",
-      userName: "eshaniiii_98",
-      userImage: "/member-1.png",
-      postPic: "/pic-01.png",
-      caption: "Select noon category fashion and explore the world of fashion",
-
-
-    },
-
-    {
-      userId: "222",
-      userName: "methieeee_96",
-      userImage: "/member-2.png",
-      postPic: "/pic-02.png",
-      caption: "Select noon category fragrances and collect the best fragrances ever",
-
-    },
-
-    {
-      userId: "333",
-      userName: "shaaaaan_06",
-      userImage: "/member-3.png",
-      postPic: "/pic-03.png",
-      caption: "Select noon category mobiles and upgrade your mobile phone to the latest",
-
-    },
-
-    {
-      userId: "444",
-      userName: "thaweeeee_99",
-      userImage: "/member-4.png",
-      postPic: "/pic-04.png",
-      caption: "Select noon category appliances and ease your days at home",
-
-    }
-
-  ];
-
-    //function for adding favorite images using post method
-    const handlefav = async (posts) => {
-
-      let data =
-      {
+  const [posts, setPost] = useState([])
+  async function fetchpost() {
+    fetch('http://localhost:3000/api/notes')
+      .then((res) => {
+        return res.json()
+      })
+      .then((data) => {
+        setPost(data.data)
+      })
+  }
+  useEffect(() => {
+    fetchpost()
+  }, [posts])
+  const handlefav = async (post) => {
+    let data
+    if (post.fav === false) {
+      data = {
         userId: posts.userId,
         userName: posts.userName,
         userImage: posts.userImage,
         postPic: posts.postPic,
         caption: posts.caption,
+        fav: true,
+        btnFill: 'red',
       }
-  
-  
-      Fetch('http://localhost:3000/api/notes', {
-        method: 'POST',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(
-          data)
-      })
-  
-  
+    } else {
+      data = {
+        userId: posts.userId,
+        userName: posts.userName,
+        userImage: posts.userImage,
+        postPic: posts.postPic,
+        caption: posts.caption,
+        fav: false,
+        btnFill: 'white',
+      }
     }
-
-
+    const update = await fetch(`http://localhost:3000/api/notes/${post._id}`, {
+      method: 'PUT',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    })
+  }
   return (
     <div className="">
       <Head>
@@ -84,17 +60,9 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Post posts={posts} handlefav={handlefav} />
+      {posts && <Post posts={posts} handlefav={handlefav} />}
       <Footer />
     </div>
-
-
-
-
-
-
-
   )
 }
-
-export default Home;
+export default Home
