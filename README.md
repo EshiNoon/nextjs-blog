@@ -1,6 +1,6 @@
    - Indroduction 
    - UI Screentshots 
-   - How the application Works
+   - How the application works
    
 
 
