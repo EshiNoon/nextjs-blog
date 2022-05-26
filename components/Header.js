@@ -32,12 +32,6 @@ function Header() {
           </Link>
         </div>
 
-        {/* <div className="flex items-center justify-end space-x-4 relative lg:hidden cursor-pointer">
-
-                    <Link href='/'><HomeIcon className="navBtn" /></Link>
-                    <Link href='/liked'><HeartIcon className="navBtn" /></Link>
-
-                </div> */}
       </div>
     </div>
   )
