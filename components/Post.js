@@ -14,7 +14,7 @@ const handlefav = props.handlefav;
     return (
         posts.map((post) => (
 
-            <div class="container overflow-hidden max-w-mdmax-w-md">
+            <div class="container mx-auto px-4 overflow-hidden">
 
 
             <div className="bg-white my-7 border rounded-sm">

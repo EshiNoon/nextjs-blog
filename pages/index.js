@@ -17,7 +17,6 @@ const Home = () => {
       userImage: "/member-1.png",
       postPic: "/pic-01.png",
       caption: "Select noon category fashion and explore the world of fashion",
-      tags: "#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion",
 
 
     },
@@ -27,8 +26,7 @@ const Home = () => {
       userName: "methieeee_96",
       userImage: "/member-2.png",
       postPic: "/pic-02.png",
-      caption: "Select noon category fragrance and collect the best brands ever",
-      tags: "#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion",
+      caption: "Select noon category fragrances and collect the best fragrances ever",
 
     },
 
@@ -37,8 +35,7 @@ const Home = () => {
       userName: "shaaaaan_06",
       userImage: "/member-3.png",
       postPic: "/pic-03.png",
-      caption: "Select noon mobiles and get the latest mobile phones",
-      tags: "#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion",
+      caption: "Select noon category mobiles and upgrade your mobile phone to the latest",
 
     },
 
@@ -48,7 +45,6 @@ const Home = () => {
       userImage: "/member-4.png",
       postPic: "/pic-04.png",
       caption: "Select noon category appliances and ease your days at home",
-      tags: "#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion#fashion",
 
     }
 
@@ -64,7 +60,6 @@ const Home = () => {
         userImage: posts.userImage,
         postPic: posts.postPic,
         caption: posts.caption,
-        tags: posts.tags,
       }
   
   

@@ -21,11 +21,8 @@ const ProfileSchema = new mongoose.Schema({
       caption: {
         type: String,
         required: true
-      },
-      tags:{
-        type: String,
-        required: true
       }
+
 
 })
 

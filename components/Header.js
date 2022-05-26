@@ -10,22 +10,22 @@ import { HomeIcon } from "@heroicons/react/solid";
 
 function Header() {
     return (
-        <div className="shadow-sm border-b bg-white sticky top-0 z-50">
+        <div className="shadow-sm border-b bg-stone-300 sticky">
             <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
 
             {/* left */}
-                <div className="relative hidden lg:inline-grid h-24 w-24 cursor-pointer">
+                <div className="relative hidden lg:inline-grid h-24 w-24 top-0">
                 <Image src="/logo.png" layout="fill" objectFit="contain"/>
                 </div>
 
-                <div className="relative w-20 h-20 lg:hidden flex-shrink-0 cursor-pointer">
+                <div className="relative w-20 h-20 lg:hidden flex-shrink-0">
                 <Image src="/logo-app.png" layout="fill" objectFit="contain"/>
                 </div>
 
 
             {/* right */}
 
-                <div className="justify-end space-x-4 relative hidden lg:inline cursor-pointer">
+                <div className="justify-end space-x-4 relative hidden lg:inline cursor-pointer top-8 text-lg">
                     <Link href="/"><a>Home</a></Link>
                     <Link href="/liked"><a>Liked</a></Link>
 
