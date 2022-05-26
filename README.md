@@ -1,23 +1,34 @@
-# Next.js + Tailwind CSS Example
+   - Indroduction 
+   - UI Screent Shots 
+   - How the application Works
+   
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-## Deploy your own
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+# Nextjs-blog
 
-## How to use
+*Nextjs-blog is a single page resposive app. It consists of 2 pages.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+    1. Home page
+   This page contains posts with respective user details which you can add to the liked page by clicking on the heart icon below each post. 
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
-```
+   
+    2. Liked page 
+   This page contains the liked images from homepage. You can click on the heart icon on the posts to remove posts from this page.
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## UI Screent Shots 
+   
+   ### APP HOME PAGE 
+  <img width="629" alt="Screenshot 2022-05-26 at 08 39 25" src="https://user-images.githubusercontent.com/73179466/170408344-549cd1b4-0da7-4f45-80bc-c5778b9fbea5.png">
+
+   
+  ### WEB HOME PAGE
+
+   <img width="1680" alt="Screenshot 2022-05-26 at 08 37 16" src="https://user-images.githubusercontent.com/73179466/170408249-05db29c6-c15f-4e2a-b52f-83ca9bc25f36.png">
+
+  
+
+
+## How the application Works
+
