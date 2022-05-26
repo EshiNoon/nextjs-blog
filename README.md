@@ -33,3 +33,6 @@
 
 ## How the application Works
 
+<img width="1180" alt="Screenshot 2022-05-26 at 23 45 46" src="https://user-images.githubusercontent.com/73179466/170550826-5944d545-1eb9-4a7a-8f73-6718a0c224b0.png">
+
+
