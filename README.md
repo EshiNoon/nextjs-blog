@@ -19,11 +19,11 @@
 
 ## UI Screent Shots 
    
-   ### APP HOME PAGE 
+   ### APP HOMEPAGE 
   <img width="629" alt="Screenshot 2022-05-26 at 08 39 25" src="https://user-images.githubusercontent.com/73179466/170408344-549cd1b4-0da7-4f45-80bc-c5778b9fbea5.png">
 
    
-  ### WEB HOME PAGE
+  ### WEB HOMEPAGE
 
    <img width="1680" alt="Screenshot 2022-05-26 at 08 37 16" src="https://user-images.githubusercontent.com/73179466/170408249-05db29c6-c15f-4e2a-b52f-83ca9bc25f36.png">
 
