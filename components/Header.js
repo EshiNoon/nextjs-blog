@@ -10,7 +10,7 @@ import { HomeIcon } from "@heroicons/react/solid";
 
 function Header() {
     return (
-        <div className="shadow-sm border-b bg-stone-300 sticky">
+        <div className="shadow-sm border-b bg-stone-300 sticky top-0">
             <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
 
             {/* left */}
