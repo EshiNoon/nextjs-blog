@@ -18,41 +18,7 @@ const Home = () => {
         setPost(data.data)
       })
   }
-  useEffect(() => {
-    fetchpost()
-  }, [posts])
-  const handlefav = async (post) => {
-    let data
-    if (post.fav === false) {
-      data = {
-        userId: posts.userId,
-        userName: posts.userName,
-        userImage: posts.userImage,
-        postPic: posts.postPic,
-        caption: posts.caption,
-        fav: true,
-        btnFill: 'red',
-      }
-    } else {
-      data = {
-        userId: posts.userId,
-        userName: posts.userName,
-        userImage: posts.userImage,
-        postPic: posts.postPic,
-        caption: posts.caption,
-        fav: false,
-        btnFill: 'white',
-      }
-    }
-    const update = await fetch(`http://localhost:3000/api/notes/${post._id}`, {
-      method: 'PUT',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    })
-  }
+  fetchpost()
   return (
     <div className="">
       <Head>
@@ -60,7 +26,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      {posts && <Post posts={posts} handlefav={handlefav} />}
+      {posts && <Post posts={posts} />}
       <Footer />
     </div>
   )
